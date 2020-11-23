@@ -1,0 +1,13 @@
+<div class="experience-container">
+  <h2>Previous Experience</h2>
+    {% for item in site.data.experience %}
+    <div class="experience">
+      <div class="info">
+        <p class="role">{{ item.role }}</p>
+        <p class="company">{{ item.company }}</p>
+        <p class="dates">{{ item.dates }}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  

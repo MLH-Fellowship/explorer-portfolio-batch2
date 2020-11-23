@@ -1,0 +1,13 @@
+<div class="education-container">
+  <h2>Education</h2>
+    {% for item in site.data.education %}
+    <div class="education">
+      <div class="info">
+        <p class="course">{{ item.course }}</p>
+        <p class="institute">{{ item.institute }}</p>
+        <p class="dates">{{ item.dates }}</p>
+      </div>
+    </div>
+    {% endfor %}
+</div>
+  

@@ -1,0 +1,134 @@
+.nav-bar {
+    width: 100%;
+    display: inline-block;
+    background-color: #1C539F;
+    box-shadow: 0 0 .2rem rgba(0,0,0,.1),0 .2rem .4rem rgba(0,0,0,.2);
+    font-family: "Poppins", serif;
+    font-weight: 700 !important;
+    margin-bottom: 20px;
+}
+
+.nav-content {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.nav-content .logo-touch-target {
+    display: inline-flex;
+    height: 100%;
+    width: 350px;
+}
+
+.nav-content .nav-title {
+    color: white;
+    margin-top: 25px;
+    margin-left: 10px;
+}
+
+.nav-content .nav-logo {
+  padding: 12px !important;
+  max-width:230px;
+  max-height:60px;
+  width: auto;
+  height: auto;
+}
+
+.nav-content #pull {
+    font-size: 1.5rem;
+    color: white;
+    float: right;
+    margin-top: 1.2rem;
+    margin-right: 1.2rem;
+}
+
+.nav-content nav {
+    float: right;
+    padding-right: 20px;
+    padding-top: 15px;
+}
+
+.nav-content nav ul {
+    display: inline-block;
+    list-style: none;
+    padding-top: 8px;
+}
+
+.nav-content nav ul li a {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+    font-stretch: condensed;
+}
+
+.nav-content nav ul .separator {
+    margin: 2px 4px -4px 4px;
+    width: 0;
+    border: 1px solid white;
+    user-select: none;
+    opacity: 0;
+    text-align: center;
+}
+
+.nav-content nav ul .separator:nth-of-type(1) {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .nav-content #pull {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-bar {
+        height: auto;
+        width: 100%;
+        transition: margin-top 600ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+    }
+
+    .nav-content .logo-touch-target {
+        display: inline-flex;
+        height: 60%;
+        width: 350px;
+    }
+    .nav-content .nav-logo {
+        height: 60px;
+        margin: auto;
+    }
+
+    .nav-content .nav-title {
+        display: none;
+    }
+
+    .nav-content nav {
+        display: block;
+        width: 100%;
+        text-align: right;
+        padding-top: 0px;
+        padding-right: 0px;
+        margin-right: 1.7rem;
+    }
+
+    .nav-content nav ul {
+        padding-top: 0rem;
+    }
+
+    .nav-content nav ul.hide {
+        display: none;
+    }
+
+    .nav-content nav ul li {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .nav-content nav ul .separator {
+        display: none;
+    }
+}
+
+.hamburger-icon {
+  margin-right: 8px;
+  margin-bottom: 16px;
+}
