@@ -7,7 +7,10 @@ This can also be used for Open Source and Externship Fellows but you might need 
 ## Make your own!
 
 1. Fork this repository
-2. Go to the repository settings and turn on GitHub Pages
+2. Update `_config.yml` to contain your information.
+    1. Change `url` to be what your Github Pages will be (the name of the repository)
+    2. Make sure it has the /
+3. Go to the repository settings and turn on GitHub Pages
 
 ## Add your portfolio
 
