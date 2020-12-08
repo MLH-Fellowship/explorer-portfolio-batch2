@@ -1,11 +1,5 @@
 .education {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: left;
-    margin-left: 40px;
-    margin-bottom: 10px;
-    
+
     .info {
         display: block;
         box-sizing: initial;
@@ -19,8 +13,7 @@
           font-weight: bold;
           text-align: left;
         }
-    
-    
+
         .institute {
           margin-top: 5px;
           font-size: medium;

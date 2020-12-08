@@ -1,18 +1,25 @@
 .profile {
+    background-color: #1d539f !important;
     text-align: center;
+    height: 320px;
+    margin-bottom: 50px;
     h1 {
         font-size: 50px;
-        font-family: "Poppins";
         font-weight: 700;
-        margin-bottom: 40px;
+        color: white;
     }
 
     img {
         border-radius: 50%;
-        width: 15%;   
-        margin-bottom: 20px;
-        border-color: #f8b92a;
-        border-width: 5px;
-        border-style: solid;
+        max-width: 100%;
+        max-height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;        
+    }
+    
+    .profile-picture {
+        margin-bottom: 30px;
+        height: 200px;
     }
 }
