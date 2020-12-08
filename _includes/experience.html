@@ -1,10 +1,13 @@
 <h2>Work Experience</h2>
-<div class="experience-container">
+<div class="card-container">
     {% for item in site.data.experience %}
-    <div class="experience card">
+    <div class="card">
+      <div class="icon">
+        <img src="./assets/img/experience/{{ item.logo }}">
+      </div>
       <div class="info">
-        <p class="role">{{ item.role }}</p>
-        <p class="company">{{ item.company }}</p>
+        <p class="title">{{ item.role }}</p>
+        <p class="location">{{ item.company }}</p>
         <p class="dates">{{ item.dates }}</p>
       </div>
     </div>

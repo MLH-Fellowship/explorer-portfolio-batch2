@@ -1,11 +1,11 @@
 <h2>Projects</h2>
-<div class="project-container">
+<div class="card-container">
     {% for item in site.data.projects %}
-    <div class="project card">
+    <div class="card">
       <div class="info">
         <p class="title">{{ item.title }}</p>
-        <p class="event">{{ item.event }}</p>
-        <p class="date">{{ item.date }}</p>
+        <p class="location">{{ item.event }}</p>
+        <p class="dates">{{ item.date }}</p>
       </div>
     </div>
     {% endfor %}
