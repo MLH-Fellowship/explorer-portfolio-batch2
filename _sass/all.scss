@@ -27,17 +27,16 @@ body {
     margin-bottom: 50px;
 }
 h2 {
-    margin-bottom: 20px;    
-    margin-top: 20px; 
-    font-weight: 700;     
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: 700;
     text-align: center;
 }
 
 .card {
     display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: left;
+    flex-direction: row;
+    align-items: center;
     margin: 20px 30px;
     background-color: white;
     border-radius: .375rem;
@@ -46,8 +45,6 @@ h2 {
 }
 
 .info {
-    float:right;
-    
     p {
         margin-top: 5px;
         margin: 0px;
@@ -71,11 +68,11 @@ h2 {
 }
 
 .icon {
-    float: left
-}
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
 
-.icon img {
-    width: 30%;
-    display: block;
-    padding: 15px;
+    img {
+        width: 100%;
+    }
 }
