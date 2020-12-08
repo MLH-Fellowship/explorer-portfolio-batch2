@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
 @import 'navbar';
 @import 'profile';
+@import 'page';
 
 .card-container {
     display: grid;
@@ -9,7 +10,7 @@
     font-family: "Open Sans", sans-serif;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
   .card-container {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -42,6 +43,10 @@ h2 {
     border-radius: .375rem;
     padding: 1.5em;
     font-size: 1.2em;
+}
+
+a {
+    color: black;
 }
 
 .info {

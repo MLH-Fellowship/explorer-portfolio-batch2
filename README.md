@@ -11,7 +11,7 @@ This can also be used for Open Source and Externship Fellows but you might need 
 
 ## Add your portfolio
 
-Head to `_data` and fill out either `education.yml`, `experience.yml` and `projects.yml`.
+Head to `_data` and fill out either `projects.yml`, `experience.yml` and `education.yml`.
 
 Project example.
 ```yaml
@@ -35,10 +35,33 @@ Education example.
   dates: Fall 2020
   logo: fellowship.svg
 ```
+## Add project posts
+
+1. Make a new `.md` file inside of `projects`.
+2. Add the header to your markdown file (see below) and change the title to the name of your blog post.
+3. Write your project page! Can be a README from GitHub or your Devpost page.
+4. Add the `page-name` field to your `projects.yml` (see below).
+
+Top of post markdown file post.
+```
+---
+title: Sprint 1 Project
+layout: page
+---
+```
+
+`projects.yml` with the `page-name` field.
+
+```yaml
+- title: Machine Learning Project
+  event: MLH Fellowship Explorer Sprint 3 - Batch 1
+  date: Fall 2020
+  page-name: sprint1
+```
 
 ## Development
 
-Make sure to have Ruby and Bundler installed.
+If you want to test it locally or add some new features, run the below commands. Make sure to have Ruby and Bundler installed.
 
 ```
 bundle install
