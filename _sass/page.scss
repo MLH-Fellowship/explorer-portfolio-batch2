@@ -103,6 +103,23 @@ hr {
 
 @media screen and (max-width: 768px) {
     
+    .banner {
+        padding: 20px 0px 20px 0px;
+        height: 110px;
+    }
+
+    .banner .logo {
+        max-width:150px;
+        max-height:60px;
+        width: auto;
+        height: auto;
+    }
+
+    .banner .title {
+        color: white;
+        font-size: 30px;
+        font-weight: 700;
+    }
 
     .page h1 {
         font-size: 1.5rem !important;
