@@ -6,6 +6,10 @@ layout: page
 <h1 align="center">Quizlet Games</h1>
 
 <p align="center">
+  <img src="assets/img/Sprint1.PNG" width="550" height="350"/>
+</p>
+
+<p>
     Studying flashcards is super important -- but its usually not fun and can be very repetitive. :( Although apps like Quizlet have tried to optimize this experience through creating an interactive learning platform, we felt that the existing structure was not enough to compel users to voluntarily want to study their flashcards. With this in mind, we conceptualized a platform of our own that would incorporate Quizlet flashcards within a series of fun, interactive games! </p>
 
 ## Concentration
