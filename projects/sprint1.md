@@ -6,7 +6,7 @@ layout: page
 <h1 align="center">Quizlet Games</h1>
 
 <p align="center">
-  <img src="assets/img/Sprint1.PNG" width="550" height="350"/>
+  <img src="Sprint1.PNG" width="650" height="300"/>
 </p>
 
 <p>
