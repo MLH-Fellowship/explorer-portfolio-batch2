@@ -30,24 +30,24 @@ jobs:
         run: wget https://raw.githubusercontent.com/MLH-Fellowship/portfolio-template/master/_data/education.yml
 
 
-      - name: Run Find changed files.
-        
-        id: changed_files
-        uses: jackton1/find-changed-files@v1.1
-        
-        with:
-          files: "_data/education.yml"
-      - name: Perform action when files change.
-        if: steps.changed_files.outputs.files_changed == 'true'
-        run: |
-          echo "Config files have been changed."
-          exit 1 
-
-      - name: Smart git diff
+      - name: Checking for changes in education.yml
         uses: LouisBrunner/diff-action@v0.1.0
         with:
           old: education.yml
           new: _data/education.yml
+          mode: addition
+          tolerance: same
+          output: out.txt
+      
+      - name: Fetch old experience file
+        run: wget https://raw.githubusercontent.com/MLH-Fellowship/portfolio-template/master/_data/experience.yml
+
+
+      - name: Checking for changes in experience.yml
+        uses: LouisBrunner/diff-action@v0.1.0
+        with:
+          old: experience.yml
+          new: _data/experience.yml
           mode: addition
           tolerance: same
           output: out.txt
