@@ -57,3 +57,13 @@ jobs:
         run: |
           echo "Config files have been changed."
           exit 1 
+          
+      - name: Smart git diff
+        uses: LouisBrunner/diff-action@v0.1.0
+        with:
+          old: https://raw.githubusercontent.com/MLH-Fellowship/portfolio-template/master/_config.yml
+          new: _config.yml
+          mode: addition
+          tolerance: betterru
+          output: out.txt
+  
