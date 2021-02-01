@@ -65,6 +65,6 @@ jobs:
           old: _config.yml.1
           new: _config.yml
           mode: addition
-          tolerance: better
+          tolerance: same
           output: out.txt
   
