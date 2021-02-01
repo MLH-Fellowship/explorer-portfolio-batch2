@@ -64,6 +64,6 @@ jobs:
           old: https://raw.githubusercontent.com/MLH-Fellowship/portfolio-template/master/_config.yml
           new: _config.yml
           mode: addition
-          tolerance: betterru
+          tolerance: better
           output: out.txt
   
