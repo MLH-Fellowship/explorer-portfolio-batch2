@@ -49,7 +49,7 @@ jobs:
           old: experience.yml
           new: _data/experience.yml
           mode: addition
-          tolerance: same, mixed
+          tolerance: same
           output: out.txt
 
       - name: Fetch old projects file
