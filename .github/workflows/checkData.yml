@@ -51,5 +51,18 @@ jobs:
           mode: addition
           tolerance: same
           output: out.txt
+
+      - name: Fetch old projects file
+        run: wget https://raw.githubusercontent.com/MLH-Fellowship/portfolio-template/master/_data/projects.yml
+
+
+      - name: Checking for changes in projects.yml
+        uses: LouisBrunner/diff-action@v0.1.0
+        with:
+          old: projects.yml
+          new: _data/projects.yml
+          mode: addition
+          tolerance: same
+          output: out.txt
           
   
