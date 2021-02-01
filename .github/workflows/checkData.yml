@@ -1,6 +1,6 @@
 
 
-name: Checking _config.yml 
+name: Checking Data files
 
 # Controls when the action will run. 
 on:
