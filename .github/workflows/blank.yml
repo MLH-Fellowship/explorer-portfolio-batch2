@@ -46,3 +46,14 @@ jobs:
         run: bundle install
       - name: Build Jekyll 
         run: bundle exec jekyll build
+
+      - name: Run Find changed files.
+        id: changed_files
+        uses: jackton1/find-changed-files@v1.1
+        with:
+          files: "_config.yml"
+      - name: Perform action when files change.
+        if: steps.changed_files.outputs.files_changed == 'true'
+        run: |
+          echo "Config files have been changed."
+          exit 1 
