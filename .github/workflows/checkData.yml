@@ -26,8 +26,8 @@ jobs:
       - uses: actions/checkout@v2
 
 
-      - name: Fetch old config file
-        run: wget https://raw.githubusercontent.com/MLH-Fellowship/portfolio-template/master/_config.yml
+      - name: Fetch old education file
+        run: wget https://raw.githubusercontent.com/MLH-Fellowship/portfolio-template/master/_data/education.yml
 
 
       - name: Run Find changed files.
@@ -42,5 +42,14 @@ jobs:
         run: |
           echo "Config files have been changed."
           exit 1 
+
+      - name: Smart git diff
+        uses: LouisBrunner/diff-action@v0.1.0
+        with:
+          old: education.yml
+          new: _data/education.yml
+          mode: addition
+          tolerance: same
+          output: out.txt
           
   
