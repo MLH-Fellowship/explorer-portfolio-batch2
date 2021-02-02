@@ -8,7 +8,7 @@ This can also be used for Open Source and Externship Fellows but you might need 
 
 1. Fork this repository or use the Template button.
 2. Update `_config.yml` to contain your information.
-    1. Change `baseurl` to be what your Github Pages will be (the name of the repository)
+    1. Change `url` to be what your Github Pages will be (the name of the repository)
     2. Make sure it has the /
 3. Go to the repository settings and turn on GitHub Pages
 
@@ -69,19 +69,4 @@ If you want to test it locally or add some new features, run the below commands.
 ```
 bundle install
 bundle exec jekyll serve
-```
-
-## Docker
-
-To use Docker instead, run the below command. If you are using Windows, you should run it with WSL 2 in order to use live-reload. Be sure to be running within the Linux filesystem.
-
-```
-docker-compose up
-```
-
-If you get an error related to `Gemfile.lock`, run the below commands:
-
-```
-touch Gemfile.lock
-chmod a+w Gemfile.lock
 ```
