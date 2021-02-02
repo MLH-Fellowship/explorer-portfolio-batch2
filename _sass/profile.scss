@@ -1,5 +1,7 @@
+@import 'variables';
+
 .profile {
-    background-color: #1d539f !important;
+    background-color: $herobackground;
     text-align: center;
     height: 320px;
     margin-bottom: 50px;
