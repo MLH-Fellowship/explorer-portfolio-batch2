@@ -1,5 +1,5 @@
-#problem solving skills section
-- name: Language
+# Language Section
+- name: Languages
   skills:    
     - skill: Python
       prof: Intermediate
@@ -9,12 +9,12 @@
       prof: Beginner
       logo: c++.jpg
 
-    - skill: DSA
+    - skill: Java
       prof: Intermediate
       logo: dsa.png  
 
 #frameworks section
-- name: "frameworks"
+- name: Frameworks
   skills:
     - skill: Flutter
       prof: Intermediate
@@ -29,8 +29,7 @@
       logo: express.png
 
 # #interpersonal section
-
-- name: "Soft Skills"
+- name: Soft Skills
   skills:
     - skill: Communication Skills
       prof: Beginner
@@ -43,10 +42,3 @@
     - skill: Team Player
       prof: Advanced
       logo: team.png
-  
-  
-  
-  
-  
-  
-  
