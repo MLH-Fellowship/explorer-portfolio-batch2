@@ -49,6 +49,13 @@ h2 {
     border-radius: .375rem;
     padding: 1.5em;
     font-size: 1.2em;
+    position: relative;
+
+    .launch-icon {
+      position: absolute;
+      right: 14px;
+      top: 14px;
+    }
 }
 
 a {
