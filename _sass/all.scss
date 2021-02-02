@@ -54,7 +54,7 @@ h2 {
 }
 
 a {
-    color: black;
+    color: inherit;
 }
 
 .info {
@@ -76,7 +76,7 @@ a {
 
     .dates {
         font-size: small;
-        color: #404040;
+        color: inherit;
     }
 }
 
@@ -89,4 +89,13 @@ a {
     img {
         width: 100%;
     }
+}
+
+.darkmode {
+  background-color: #181818 !important;
+  color: white;
+}
+
+.alt-background {
+  background-color: #C0C0C0;
 }
