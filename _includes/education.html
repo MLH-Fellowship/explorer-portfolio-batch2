@@ -3,7 +3,7 @@
     {% for item in site.data.education %}
     <div class="card">
       <div class="icon">
-        <img src="./assets/img/education/{{ item.logo }}">
+        <img src="{{ '/assets/img/education/' | append: item.logo | relative_url }}">
       </div>
       <div class="info">
         <p class="title">{{ item.course }}</p>
@@ -13,4 +13,3 @@
     </div>
     {% endfor %}
 </div>
-  
