@@ -1,0 +1,32 @@
+name: Converting To PDF
+
+on:
+  push:
+    branches: 
+      - generatePDF
+
+jobs:
+  convert:
+    name: Convert portfolio to pdf
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: Update
+      run: sudo apt-get update
+    - name: Install
+      run: sudo apt-get install xvfb wkhtmltopdf
+    - name: Convert
+      run: |
+        mkdir cv
+        portfolioURL=$(grep 'url:' _config.yml | tail -n1 | awk '{ print s $2}' | tr -d \")
+        xvfb-run wkhtmltopdf ${portfolioURL} cv/resume.pdf
+    - name: Archive convert results
+      uses: actions/upload-artifact@v2
+      with:
+        name: resume
+        path: ${{ github.workspace }}/cv
