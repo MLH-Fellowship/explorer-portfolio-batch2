@@ -3,33 +3,20 @@ layout: default
 ---
 
 <body>
-    {% include navbar.html %} 
-    <h2>BLOG POSTS</h2>
-    <div class="blog">
-        <div class="container">
-              <div class="posts">  
-                <div class="card-container">
-                      {% for item in site.data.projects %}
-                      {% if item.page-name %}
-                            <a href="{{ site.url }}/projects/{{ item.page-name }}">{{item.page-name}}</a>
-                      {% endif %}
-                      {% endfor %} 
-              </div> 
-                <div class="Post2">
-                  <a href="{{ site.url }}/projects/{{ item.page-name }}">
-                    <img src="https://neilpatel.com/wp-content/uploads/2017/02/blogging.jpg" width="100%">
-                  </a>
-                  <div class="inner">
-                    <h3><a href="./posts.html">Sprint2</a></h3>
-                  </div>
-                </div>
-  
-                <div class="Post3">
-                  <a href="./posts.html">
-                    <img src="https://neilpatel.com/wp-content/uploads/2017/02/blogging.jpg" width="100%">
-                  </a>
-                  <div class="inner">
-                    <h3><a href="./posts.html">Sprint3</a></h3>
-                  </div>
-                </div>
+  {% include navbar.html %}
+  <h2>BLOG POSTS</h2>
+  <div class="blog">
+    <div class="container">
+      <div class="posts">
+        <div class="card-container">
+          {% for item in site.data.projects %}
+          {% if item.page-name %}
+          <a href="{{ site.url }}/projects/{{ item.page-name }}">{{item.page-name}}
+            <img src="https://neilpatel.com/wp-content/uploads/2017/02/blogging.jpg" width="100%">
+          </a>
+          {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
 </body>
