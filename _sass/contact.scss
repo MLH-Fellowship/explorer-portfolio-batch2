@@ -28,19 +28,9 @@ input[type="submit"]:hover {
   background-color: #232fdf;
 }
 
-/* Create two columns that float next to eachother */
-.column {
-  align-content: center;
-  float: left;
-  width: 50%;
-  margin-top: 6px;
-  padding: 20px;
-}
-
 /* Responsive layout - when the screen is less than 600px wide, make the two
 columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-  .column,
   input[type="submit"] {
     width: 100%;
     margin-top: 0;
