@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<body>
+    {% include navbar.html %} 
+    <h2>LIST OF BLOGS</h2>
+    <div class="card-container">
+        <ul>
+            {% for item in site.data.projects %}
+            {% if item.page-name %}
+                <li>
+                    <a href="{{ site.url }}/projects/{{ item.page-name }}">{{item.page-name}}</a>
+                </li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+</body>
