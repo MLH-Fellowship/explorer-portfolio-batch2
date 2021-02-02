@@ -29,7 +29,7 @@ body {
 
 .banner .title {
     color: white;
-    font-size: calc(25px + 1.5vw); // making font size responsive by removing hard coded value
+    font-size: calc(25px + 1.5vw);
     font-weight: 700;
 }
 
@@ -42,14 +42,14 @@ body {
     text-align: left !important;
     font-weight: 800 !important;
     color: black;
-    font-size: calc(1.5rem + 0.5vw); //  making font size responsive by removing hard coded value
+    font-size: calc(1.5rem + 0.5vw); 
     margin-bottom: 0.7em;
 }
 
 .page h2 {
     text-align: left !important;
     font-weight: 800 !important;
-    font-size: calc(1rem + 0.5vw); // making font size responsive by removing hard coded value
+    font-size: calc(1rem + 0.5vw); 
     color: black;
     margin-bottom: 0.5em;
 }
