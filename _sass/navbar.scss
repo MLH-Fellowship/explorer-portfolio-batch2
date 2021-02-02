@@ -4,7 +4,6 @@
     background-color: #1C539F;
     font-family: "Poppins", serif;
     font-weight: 700 !important;
-    padding-top: 10px;
 }
 
 .nav-content .logo-touch-target {
@@ -26,7 +25,7 @@
     font-weight: 400;
 }
 
-a{
+a {
     transition: 0.5s;
 }
 
@@ -43,11 +42,12 @@ a:hover, a:focus {
 .nav-logo {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .nav-logo img {
-    width: 200px;
+    margin-left: 1rem;
+    width: calc(100px + 6vw); 
 }
 
 .nav-content nav {
