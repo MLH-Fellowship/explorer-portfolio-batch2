@@ -3,22 +3,23 @@
 @import 'navbar';
 @import 'profile';
 @import 'page';
+@import 'variables';
 
 .card-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat($cardnum_big, 1fr);
     font-family: "Open Sans", sans-serif;
 }
 
 @media only screen and (max-width: 1500px) {
   .card-container {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat($cardnum_medium, 1fr);
   }
 }
 
 @media only screen and (max-width: 1000px) {
   .card-container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat($cardnum_small, 1fr);
   }
 }
 
