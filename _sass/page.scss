@@ -31,7 +31,7 @@ body {
 
 .banner .title {
     color: $title_color;
-    font-size: 50px;
+    font-size: $title_font_size;
     font-weight: 700;
 }
 
@@ -44,6 +44,7 @@ body {
     text-align: left !important;
     font-weight: 800 !important;
     color: $text_color;
+    font-size: $fontsize_h1;
     margin-bottom: 0.7em;
 }
 
@@ -51,6 +52,7 @@ body {
     text-align: left !important;
     font-weight: 800 !important;
     color: $text_color;
+    font-size: $fontsize_h2;
     margin-bottom: 0.5em;
 }
 
@@ -115,23 +117,5 @@ hr {
         max-height:60px;
         width: auto;
         height: auto;
-    }
-
-    .banner .title {
-        color: $title_color;
-        font-size: 30px;
-        font-weight: 700;
-    }
-
-    .page h1 {
-        font-size: 1.5rem !important;
-    }
-
-    .page h2 {
-        font-size: 1.2rem !important;
-    }
-    
-    .page h4 {
-        font-size: 0.8rem !important;
     }
 }
