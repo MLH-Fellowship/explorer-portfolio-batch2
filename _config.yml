@@ -1,4 +1,4 @@
-title: "Will Russel"
+title: "Will Russell"
 email: fellowship@mlh.io
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
@@ -8,6 +8,7 @@ baseurl: "/"
 url: "/portfolio-template"
 twitter_username: mlhacks
 github_username: mlh-fellowship
+form_url: "https://formspree.io/f/xrgodpqo"
 
 sass:
   sass_dir: _sass
