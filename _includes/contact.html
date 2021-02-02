@@ -1,20 +1,20 @@
 <h2>Contact Us</h2>
-<div class="card">
+<div class="form card">
   <form action="https://formspree.io/f/xrgodpqo" method="POST">
     <label for="fname">Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..." />
+    <input type="text" id="fname" name="firstname" required=true placeholder="Your name..." />
 
     <label> Email</label>
-    <input type="text" id="email" name="_replyto" placeholder="Your name..." />
+    <input type="text" id="email" name="_replyto" required=true placeholder="Your Email..." />
 
     <label for="subject">Message</label>
     <textarea
       id="subject"
+      required=true
       name="message"
       placeholder="Write something..."
       style="height: 170px"
     ></textarea>
-
-    <input type="submit" value="Send" class="button" />
+    <input type="submit" value="Submit" class="button" />
   </form>
 </div>
