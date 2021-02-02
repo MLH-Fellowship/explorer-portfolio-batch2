@@ -1,13 +1,13 @@
 <h2>{{include.title}}</h2>
 <div class="card-container">
-    {% for item in site.data.education %}
+    {% for item in include.file %}
     <div class="card">
       <div class="icon">
         <img src="./assets/img/education/{{ item.logo }}">
       </div>
       <div class="info">
-        <p class="title">{{ item.course }}</p>
-        <p class="location">{{ item.institute }}</p>
+        <p class="title">{% if include.title == "Education" %}{{ item.course }}{% endif %}</p>
+        <p class="location">{% if include.title == "Education" %}{{ item.institute }}{% endif %}</p>
         <p class="dates">{{ item.dates }}</p>
       </div>
     </div>
