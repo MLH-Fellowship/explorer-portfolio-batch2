@@ -55,7 +55,18 @@ h2 {
       position: absolute;
       right: 14px;
       top: 14px;
+      pointer-events: none;
     }
+}
+
+.link-card {
+  hover: {
+    color: inherit;
+    text-decoration: none;
+  }
+  .card:hover {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
 }
 
 a {
