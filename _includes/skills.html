@@ -1,16 +1,21 @@
 <h2>Skills</h2>
-<div class="card-container">
-    {% for item in site.data.skills %}
-    <div class="card">
-      <div class="icon">
-        <img src="./assets/img/skills/{{ item.logo }}">
+<div class="skill-section">
+  {% for item in site.data.skills %}
+  <div class="skill">
+    <div class="skill-card">
+      <p class="title">{{ item.name }}</p>
+      {% for category in item.skills %}
+      <div class="card">
+        <div class="icon">
+          <img src="./assets/img/skills/{{ category.logo }}">
+        </div>
+        <div class="info">
+          <p>{{ category.skill }}</p>
+          <p class="proficient">{{ category.prof }}</p>
+        </div>
       </div>
-      <div class="info">
-        <p class="title">{{ item.skill }}</p>
-        <p class="location">{{ item.section }}</p>
-        <p class="dates">{{ item.prof }}</p>
-      </div>
+      {% endfor %}
     </div>
-    {% endfor %}
+  </div>
+  {% endfor %}
 </div>
-  
