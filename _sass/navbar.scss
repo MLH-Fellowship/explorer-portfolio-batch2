@@ -16,8 +16,8 @@
 .nav-link {
     position: absolute;
     color: white;
-    top: 8px;
-    right: 8px;
+    top: 10px; // allign it properly
+    right: 10px;
 }
 
 a{
@@ -38,11 +38,12 @@ a:hover, a:focus {
 .nav-logo {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .nav-logo img {
-    width: 200px;
+    margin-left: 1rem;
+    width: calc(100px + 6vw); // making mlh log responsive for smaller devices
 }
 
 .nav-content nav {
