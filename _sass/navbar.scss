@@ -13,6 +13,23 @@
     width: 350px;
 }
 
+.nav-link {
+    position: absolute;
+    color: white;
+    top: 8px;
+    right: 8px;
+}
+
+a{
+    transition: 0.5s;
+}
+
+a:hover, a:focus {
+    color: #ffcd69;
+    transition: 0.5s;
+}
+
+
 .nav-content .nav-logo {
     height: 60px;
     margin: auto;
