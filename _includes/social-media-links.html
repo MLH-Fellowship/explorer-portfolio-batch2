@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 
 {% if site.data.social-media %}
 <div class="social text-center">
@@ -6,7 +6,7 @@
     {% for entry in sm %}
     {% assign key = entry | first %}
     {% if sm[key].id %}
-    <a href="{{ sm[key].href }}{{ sm[key].id }}" title="{{ sm[key].title }}"><i
+    <a href="{{ sm[key].href }}{{ sm[key].id }}" title="{{ sm[key].title }}"><i id="social_icon"
             class="fa {{ sm[key].fa-icon }} mx-3"></i></a>
     {% endif %}
     {% endfor %}
