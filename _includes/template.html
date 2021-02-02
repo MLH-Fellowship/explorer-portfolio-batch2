@@ -15,8 +15,8 @@
     <div class="card">
     {% endif %}
       <div class="info">
-        <p class="title">{% if include.title == "Education" %}{{ item.course }}{% elsif include.title == "Work Experience" %}{{item.role}}{% endif %}</p>
-        <p class="location">{% if include.title == "Education" %}{{ item.institute }}{% elsif include.title == "Work Experience" %}{{item.company}}{% endif %}</p>
+        <p class="title">{% if include.title == "Education" %}{{ item.course }}{% elsif include.title == "Work Experience" %}{{item.role}}{% else %}{{item.title}}{% endif %}</p>
+        <p class="location">{% if include.title == "Education" %}{{ item.institute }}{% elsif include.title == "Work Experience" %}{{item.company}}{% else %}{{item.event}}{% endif %}</p>
         <p class="dates">{{ item.dates }}</p>
       </div>
     </div>
