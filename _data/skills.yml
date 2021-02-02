@@ -1,0 +1,57 @@
+#problem solving skills section
+
+- skill: Python
+  section: Programming Language
+  prof: 4/5
+  logo: python.jpg
+  
+- skill: C++
+  section: Programming Language
+  prof: 3/5
+  logo: c++.jpg
+
+- skill: DSA
+  section: Programming Language
+  prof: 3/5
+  logo: dsa.png
+  
+
+#frameworks section
+- skill: Flutter
+  section: App Development
+  prof: 3/5
+  logo: flutter.png
+
+- skill: Django
+  section: Web Development
+  prof: 4/5
+  logo: django.png
+  
+- skill: Express.js
+  section: Web Development
+  prof: 3/5
+  logo: express.png
+
+#interpersonal section
+
+- skill: Communication Skills
+  section: Soft Skills
+  prof: 4/5
+  logo: communication.jpg
+
+- skill: Presentation Skills
+  section: Plus-Skills
+  prof: 4/5
+  logo: presentation.png
+
+- skill: Team Player
+  section: Interpersonal skills
+  prof: 4/5
+  logo: team.png
+  
+  
+  
+  
+  
+  
+  
