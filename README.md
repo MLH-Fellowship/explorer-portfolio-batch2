@@ -14,7 +14,7 @@ This can also be used for Open Source and Externship Fellows but you might need 
 
 ## Add your portfolio
 
-Head to `_data` and fill out either `projects.yml`, `experience.yml` and `education.yml`.
+Head to `_data` and fill out either `projects.yml`, `experience.yml`, `education.yml` and `achievements.yml`.
 
 Project example.
 ```yaml
@@ -38,6 +38,13 @@ Education example.
   dates: Fall 2020
   logo: fellowship.svg
 ```
+
+Achievement example.
+```yaml
+- title: Winner at MLH Hackathon
+  date: Jan 2021
+```
+
 ## Add project posts
 
 1. Make a new `.md` file inside of `projects`.
