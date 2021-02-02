@@ -8,7 +8,7 @@ twitter:
   id: 'your-twitter-name'
   href: 'https://www.twitter.com/'
   title: 'Twitter'
-  fa-icon: 'fa-twitter-square'
+  fa-icon: 'fab fa-twitter'
 
 github:
   id: 'your-github-name'
