@@ -13,12 +13,19 @@
     width: 350px;
 }
 
-.nav-link {
+.nav-links {
     position: absolute;
-    color: white;
     top: 8px;
     right: 8px;
+    display: flex;
+    flex-direction: row;
 }
+
+.nav-link {
+    color: white;
+    font-weight: 400;
+}
+
 
 a{
     transition: 0.5s;
