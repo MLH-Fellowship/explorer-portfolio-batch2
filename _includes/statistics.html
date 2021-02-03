@@ -1,6 +1,11 @@
 <h2>Statistics</h2>
 <div class="card-container">
+  {% for item in site.data.statistics %}
   <div class="stat-card">
-    {{ "[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra)](https://github.com/anuraghazra/github-readme-stats)"| markdownify }}
+    <div class="info">
+      <p class="title">{{ item.title }}</p>
+      <p class="dates">{{ item.date }}</p>
+    </div>
   </div>
+  {% endfor %}
 </div>
