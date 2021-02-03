@@ -1,0 +1,11 @@
+<h2>Statistics</h2>
+<div class="card-container">
+  {% for item in site.data.statistics %}
+  <div class="card">
+    <div class="info">
+      <p class="title">{{ item.title }}</p>
+      <p class="dates">{{ item.date }}</p>
+    </div>
+  </div>
+  {% endfor %}
+</div>
