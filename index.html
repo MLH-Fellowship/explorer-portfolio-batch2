@@ -1,16 +1,23 @@
 ---
-layout: default
 ---
 
+<!DOCTYPE html>
+<html lang="en">
+  {% include header.html %}
+
+  <body>
     {% include navbar.html %} 
     
     {% include profile.html %} 
     
-    {% include template.html title="Projects" file=site.data.projects %} 
+    {% include bio.html %}
     
-    {% include template.html title="Work Experience" file=site.data.experience %} 
+    {% include projects.html %} 
     
-    {% include template.html title="Education" file=site.data.education %} 
+    {% include experience.html %} 
+    
+    {% include education.html %}
     
     {% include achievements.html %}
-
+  </body>
+</html>
