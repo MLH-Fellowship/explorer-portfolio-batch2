@@ -68,6 +68,16 @@ layout: page
   date: Fall 2020
   page-name: sprint1
 ```
+## Add Contact Us form
+
+1. Create a formspree account and login with the credentials. | https://formspree.io/register
+2. A verfication mail will be sent to the registered email id. Once the verification is done, you could add new forms.
+3. Click on the new project button and then add new form in formspree profile with a name and a valid email id.
+4. Once form is added successfully, you will be provided with form's endpoint in the `integeration` tab | 
+    Example : https://formspree.io/f/mrgodpnk
+5. Copy the end point and add it to the `form_url` in `_config.yml` file and then you are good to go! :)
+    Example : `form_url: "https://formspree.io/f/mrgodpnk"`
+6. All the submissions will be visible on the `submissions` tab. :D
 
 ## Development
 
