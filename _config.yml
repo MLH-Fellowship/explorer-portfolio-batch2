@@ -8,8 +8,10 @@ baseurl: "/"
 url: "/portfolio-template" 
 twitter_username: mlhacks
 github_username:  mlh-fellowship
+cover: "./assets/img/social-link.jpg" 
 
 sass:
   sass_dir: _sass
 
 icon: ./assets/img/icon.jpg
+theme: jekyll-theme-cayman
