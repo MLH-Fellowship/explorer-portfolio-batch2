@@ -5,21 +5,20 @@
     flex-direction: row;
     background-color: #1C539F;
     position: relative;
-    padding: 6px;
+    padding: 6px 12px ;
     margin-top: 10px;
     font-family: "Open Sans", serif;
     font-weight: 500 !important;
-    color: black;
+    color: white;
     img{
         max-width:100px;
     }
 }
 .footer .social{  
-    display: inline-block;
-    img{
-        max-width:30px;
-    }
+    color: white;
     a{
         margin-left: 10px;
+        font-size: 18px;
     }
+
 }
