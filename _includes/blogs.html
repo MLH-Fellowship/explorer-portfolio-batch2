@@ -1,4 +1,6 @@
 <div class="card-container">
+<!--- Custom Blogs kept in _posts Folder -->
+
     {% for item in site.posts %}
     <a href="{{ item.url }}">
       <div class="card">
@@ -9,6 +11,7 @@
       </div>
     </a>
     {% endfor %}
+<!--- Blogs that are from blogs.yml file in _data folder -->
 
     {% for item in site.data.blogs %}
     <a href="{{ item.url }}">
