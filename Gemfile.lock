@@ -8,7 +8,7 @@ GEM
     em-websocket (0.5.2)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
-    eventmachine (1.2.7)    
+    eventmachine (1.2.7)
     ffi (1.13.1)
     forwardable-extended (2.6.0)
     http_parser.rb (0.6.0)
@@ -54,7 +54,7 @@ GEM
     sassc (2.4.0)
       ffi (~> 1.9)
     terminal-table (1.8.0)
-      unicode-display_width (~> 1.1, >= 1.1.1)    
+      unicode-display_width (~> 1.1, >= 1.1.1)
     unicode-display_width (1.7.0)
     webrick (1.7.0)
 
