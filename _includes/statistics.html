@@ -2,8 +2,8 @@
 <div class="card-container">
   {% for item in site.data.statistics %}
   <div class="stat-card">
-    {{ "[![Will's Github stats](https://github-readme-stats.vercel.app/api/pin/?username=wrussell1999&repo=github-readme-stats&show_icons=true&theme=chartreuse-dark)](https://github.com/anuraghazra/github-readme-stats)"}}
-    {{"[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=wrussell1999)](https://github.com/anuraghazra/github-readme-stats)"}}
+    {{ "[![Will's Github stats](https://github-readme-stats.vercel.app/api/pin/?username=wrussell1999&repo=github-readme-stats&show_icons=true&theme=chartreuse-dark)](https://github.com/anuraghazra/github-readme-stats)"| markdownify }}
+    {{"[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=wrussell1999)](https://github.com/anuraghazra/github-readme-stats)"| markdownify }}
   </div>
   {% endfor %}
 </div>
