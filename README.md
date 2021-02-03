@@ -77,3 +77,20 @@ If you want to test it locally or add some new features, run the below commands.
 bundle install
 bundle exec jekyll serve
 ```
+## Customizing Page Components
+
+You can customize the following components by changing their variable values in `_sass/variables.scss`:
+1. `herobackground` : Background colour for the profile area
+2. `font_family` : Font style/family used
+3. `text_color` : Colour of the text used
+4. `link` : Hyperlink colour
+5. `title_color` : Colour used for the title
+6. `body_background` : Background Colour used for the page
+7. `cardnum_big` : Number of cards for a relatively big screen
+8. `cardnum_medium` : Number of cards for a relatively medium-sized screen
+9. `cardnum_small` : Number of cards for a relatively small screen
+10. `card_font_size` : Font size used within the cards
+11. `title_font_size` : Font size for the title
+12. `fontsize_h1` : Font size for h1 headings
+13. `fontsize_h2` : Font size for h2 headings
+14. `fontsize_h1_profile` : Font size for h1 headings in the profile section 
