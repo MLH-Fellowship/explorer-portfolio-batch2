@@ -1,5 +1,7 @@
+@import 'variables';
+
 p, h1, h2, h3, h4, h5, h6, button {
-    font-family: "Open Sans", serif;
+    font-family: $font_family;
 }
 
 h2 {
@@ -7,11 +9,11 @@ h2 {
 }
 
 body {
-    background-color: #f5f5f9 !important;
+    background-color: $body_background !important;
     background-size: cover;
     width: auto!important; 
     overflow-x: hidden!important;
-    font-family: "Open Sans", serif;
+    font-family: $font_family;
 }
 
 .banner {
@@ -28,8 +30,8 @@ body {
 }
 
 .banner .title {
-    color: white;
-    font-size: 50px;
+    color: $title_color;
+    font-size: $title_font_size;
     font-weight: 700;
 }
 
@@ -41,53 +43,55 @@ body {
 .page h1 {
     text-align: left !important;
     font-weight: 800 !important;
-    color: black;
+    color: $text_color;
+    font-size: $fontsize_h1;
     margin-bottom: 0.7em;
 }
 
 .page h2 {
     text-align: left !important;
     font-weight: 800 !important;
-    color: black;
+    color: $text_color;
+    font-size: $fontsize_h2;
     margin-bottom: 0.5em;
 }
 
 .page h3 {
     font-weight: 600 !important;
     text-align: left !important;
-    color: black;
+    color: $text_color;
     font-size: 1.3rem;
 }
 
 .page h4 {
     font-weight: 600 !important;
     text-align: center !important;
-    color: black;
+    color: $text_color;
 }
 
 .page p {
-    color: black;
+    color: $text_color;
     font-weight: 500;
 }
 
 .page td {
-    color: black;
+    color: $text_color;
 }
 
 .page th {
-    color: black;
+    color: $text_color;
 }
 
 .page li {
-    color: black;
+    color: $text_color;
 }
 
 .page a {
-    color: #0f90fe;
+    color: $link;
 }
 
 .page a:hover {
-    color: #0f90fe;
+    color: $link;
 }
 
 .page code {
@@ -113,23 +117,5 @@ hr {
         max-height:60px;
         width: auto;
         height: auto;
-    }
-
-    .banner .title {
-        color: white;
-        font-size: 30px;
-        font-weight: 700;
-    }
-
-    .page h1 {
-        font-size: 1.5rem !important;
-    }
-
-    .page h2 {
-        font-size: 1.2rem !important;
-    }
-    
-    .page h4 {
-        font-size: 0.8rem !important;
     }
 }
