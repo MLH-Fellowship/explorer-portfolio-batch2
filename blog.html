@@ -5,18 +5,17 @@ layout: default
 <body>
   {% include navbar.html %}
   <h2>BLOG POSTS</h2>
-  <div class="blog">
-    <div class="container">
-      <div class="posts">
-        <div class="card-container">
-          {% for item in site.data.projects %}
-          {% if item.page-name %}
-          <a href="{{ site.url }}/projects/{{ item.page-name }}">{{item.page-name}}
-            <img src="https://neilpatel.com/wp-content/uploads/2017/02/blogging.jpg" width="100%">
-          </a>
-          {% endif %}
-          {% endfor %}
+  <div class="card-container">
+    {% for item in site.data.projects %}
+    {% if item.page-name %}
+    <a href="{{ site.url }}/projects/{{ item.page-name }}">
+      <div class="card">
+        <div class="info">
+          <p class="title">{{ item.page-name }}</p>
+          <p class="dates">{{ item.date }}</p>
         </div>
       </div>
-    </div>
+    </a>
+    {% endif %}
+    {% endfor %}
 </body>
