@@ -45,6 +45,11 @@ Achievement example.
   date: Jan 2021
 ```
 
+Biography example.
+```yaml
+- bio: My name is Will and programming is my passion!
+```
+
 ## Add project posts
 
 1. Make a new `.md` file inside of `projects`.
