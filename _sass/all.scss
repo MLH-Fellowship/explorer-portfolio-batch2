@@ -78,6 +78,18 @@ a {
     }
 }
 
+.statcard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 30px;
+  background-color: white;
+  border-radius: .375rem;
+  padding: 1.5em;
+  font-size: 1.2em; 
+}
+
 .icon {
     width: 70px;
     height: 70px;
