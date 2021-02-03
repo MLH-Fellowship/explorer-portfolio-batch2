@@ -1,0 +1,27 @@
+<h2>{{include.title}}</h2>
+<div class="card-container">
+    {% for item in include.file %}
+    {% if include.title == "Education" or include.title == "Work Experience" %}
+    <div class="card">
+      <div class="icon">
+        <img src="./assets/img/education/{{ item.logo }}">
+      </div>
+    {% else %}
+        {% if item.page-name %}
+            <a href="{{ site.url }}/projects/{{ item.page-name }}">
+        {% else %}
+            <a>
+        {% endif %}
+    <div class="card">
+    {% endif %}
+      <div class="info">
+        <p class="title">{% if include.title == "Education" %}{{ item.course }}{% elsif include.title == "Work Experience" %}{{item.role}}{% else %}{{item.title}}{% endif %}</p>
+        <p class="location">{% if include.title == "Education" %}{{ item.institute }}{% elsif include.title == "Work Experience" %}{{item.company}}{% else %}{{item.event}}{% endif %}</p>
+        <p class="dates">{{ item.dates }}</p>
+      </div>
+    </div>
+    {% if include.title == "Projects" %}
+        </a>
+    {% endif %}
+    {% endfor %}
+</div>
