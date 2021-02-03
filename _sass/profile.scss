@@ -1,12 +1,24 @@
+@import 'variables';
+
 .profile {
-    background-color: #1d539f !important;
+
+    background-color: $herobackground;
+    background-image: url(https://image.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg);
+    background-size: cover;
+    background-position: center;
     text-align: center;
     height: 320px;
     margin-bottom: 50px;
+    overflow: auto;
+    position: relative;
+
     h1 {
-        font-size: 50px;
+        font-size: $fontsize_h1_profile;
         font-weight: 700;
-        color: white;
+        color: $title_color;
+        z-index: 1;
+        position: relative;
+
     }
     
     img {
@@ -17,6 +29,8 @@
         margin-right: auto;
         display: block;        
         padding: 20px;
+        z-index: 1;
+        position: relative;
     }
     
     .profile-picture {
@@ -24,3 +38,14 @@
         height: 200px;
     }
 }
+
+
+.profile:after {
+    -webkit-backdrop-filter: blur(5px); /* Use for Safari 9+, Edge 17+ (not a mistake) and iOS Safari 9.2+ */
+    backdrop-filter: blur(5px); /* Supported in Chrome 76 */
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%; height: 100%;
+    top: 0;
+  }
