@@ -4,52 +4,34 @@
     background-color: #1C539F;
     font-family: "Poppins", serif;
     font-weight: 700 !important;
-    padding-top: 10px;
 }
 
-.nav-content .logo-touch-target {
-    display: inline-flex;
-    height: 60%;
-    width: 350px;
-}
-
-.nav-link {
-    position: absolute;
-    color: white;
-    top: 10px;
-    right: 10px;
-}
-
-a{
-    transition: 0.5s;
-}
-
-a:hover, a:focus {
-    color: #ffcd69;
-    transition: 0.5s;
-}
-
-
-.nav-content .nav-logo {
-    height: 60px;
+.nav-content {
+    width: 90%;
     margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .nav-logo {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    margin-right: auto;
+    height: 60px;
+    margin-top: 10px;
 }
 
 .nav-logo img {
-    margin-left: 1rem;
     width: calc(100px + 6vw); 
 }
 
-.nav-content nav {
-    display: block;
-    width: 100%;
-    text-align: right;
-    padding-top: 0px;
-    padding-right: 0px;
+.nav-link {
+    color: white;
+    border-radius: 6px;
+}
+
+.nav-link:hover, .nav-link:focus {
+    background-color: #3a6cb3;
+    color: white;
 }
