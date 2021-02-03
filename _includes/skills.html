@@ -6,12 +6,12 @@
       <p class="title">{{ item.name }}</p>
       {% for category in item.skills %}
       <div class="card">
-        <div class="icon">
-          <img src="./assets/img/skills/{{ category.logo }}">
+        <div class="icon">          
+          <i class="{{category.icon}} colored" style="font-size: xxx-large;"></i>
         </div>
         <div class="info">
           <p>{{ category.skill }}</p>
-          <p class="proficient">{{ category.prof }}</p>
+          <p class="proficient">{{ category.profeciency }}</p>
         </div>
       </div>
       {% endfor %}
