@@ -1,0 +1,25 @@
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: #1C539F;
+    position: relative;
+    padding: 6px;
+    margin-top: 10px;
+    font-family: "Open Sans", serif;
+    font-weight: 500 !important;
+    color: black;
+    img{
+        max-width:100px;
+    }
+}
+.footer .social{  
+    display: inline-block;
+    img{
+        max-width:30px;
+    }
+    a{
+        margin-left: 10px;
+    }
+}
