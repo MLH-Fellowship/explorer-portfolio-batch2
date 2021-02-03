@@ -5,6 +5,7 @@
 @import 'profile';
 @import 'page';
 @import 'variables';
+@import 'variables_dark';
 
 .card-container {
     display: grid;
@@ -92,10 +93,10 @@ a {
 }
 
 .darkmode {
-  background-color: #181818 !important;
-  color: white;
+  background: $dark_background !important;
+  color: $dark_font_color;
 }
 
 .alt-background {
-  background-color: #C0C0C0;
+  background: $alt_card_background;
 }
