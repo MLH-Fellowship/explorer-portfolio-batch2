@@ -68,6 +68,16 @@ layout: page
   date: Fall 2020
   page-name: sprint1
 ```
+## Add Contact Us form
+
+1. Create a formspree account and login with the credentials. | https://formspree.io/register
+2. A verfication mail will be sent to the registered email id. Once the verification is done, you could add new forms.
+3. Click on the new project button and then add new form in formspree profile with a name and a valid email id.
+4. Once form is added successfully, you will be provided with form's endpoint in the `integeration` tab | 
+    Example : https://formspree.io/f/mrgodpnk
+5. Copy the end point and add it to the `form_url` in `_config.yml` file and then you are good to go! :)
+    Example : `form_url: "https://formspree.io/f/mrgodpnk"`
+6. All the submissions will be visible on the `submissions` tab. :D
 
 ## Development
 
@@ -77,3 +87,20 @@ If you want to test it locally or add some new features, run the below commands.
 bundle install
 bundle exec jekyll serve
 ```
+## Customizing Page Components
+
+You can customize the following components by changing their variable values in `_sass/variables.scss`:
+1. `herobackground` : Background colour for the profile area
+2. `font_family` : Font style/family used
+3. `text_color` : Colour of the text used
+4. `link` : Hyperlink colour
+5. `title_color` : Colour used for the title
+6. `body_background` : Background Colour used for the page
+7. `cardnum_big` : Number of cards for a relatively big screen
+8. `cardnum_medium` : Number of cards for a relatively medium-sized screen
+9. `cardnum_small` : Number of cards for a relatively small screen
+10. `card_font_size` : Font size used within the cards
+11. `title_font_size` : Font size for the title
+12. `fontsize_h1` : Font size for h1 headings
+13. `fontsize_h2` : Font size for h2 headings
+14. `fontsize_h1_profile` : Font size for h1 headings in the profile section 
