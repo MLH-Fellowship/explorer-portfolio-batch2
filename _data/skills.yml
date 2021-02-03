@@ -16,7 +16,7 @@
       profeciency: Intermediate
       icon: devicon-java-plain
 
-#frameworks section
+# frameworks section
 - name: Frameworks
   skills:
     - skill: Flutter
@@ -31,7 +31,7 @@
       profeciency: Beginner
       icon: devicon-express-original
 
-# #interpersonal section
+# interpersonal section
 - name: Soft Skills
   skills:
     - skill: Communication Skills
