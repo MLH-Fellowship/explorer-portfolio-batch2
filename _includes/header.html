@@ -7,22 +7,23 @@
     <meta name="title" content="{{ site.title }}">
     <meta name="description" content="{{ site.title }}">
 
+    {% capture social_image %}{{site.social_image | absolute_url }}{% endcapture %}
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ page.url}}">
     <meta property="og:title" content="{{ site.title }}">
-    <meta property="og:description" content="{{ site.title }}">
-    <meta property="og:image:secure_url" content="{{ site.cover }}">
-    <meta property="og:image:secure" content="{{ site.cover }}">
-    <meta property="og:image:url" content="{{ site.cover }}">
-    <meta property="og:image" content="{{ site.cover }}">
+    <meta property="og:description" content="{{ site.description }}">
+    <meta property="og:image:secure_url" content="{{ social_image }}">
+    <meta property="og:image:secure" content="{{ social_image }}">
+    <meta property="og:image:url" content="{{ social_image }}">
+    <meta property="og:image" content="{{ social_image }}">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="{{ page.url}}">
     <meta property="twitter:title" content="{{ site.title }}">
     <meta property="twitter:description" content="{{ site.description }}">
-    <meta property="twitter:image" content="{{ site.cover }}">
+    <meta property="twitter:image" content="{{ social_image }}">
     <meta name='twitter:site' content='@{{ site.twitter_username }}' />
     <meta name='twitter:creator' content='@{{ site.twitter_username }}' />
 
@@ -45,7 +46,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
         integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
 
-    <link lang='sass' rel="stylesheet" href="{{ site.url }}/assets/css/main.css">
-    <link rel='icon' href='{{ site.url }}/assets/img/favicon.ico' type='image/x-icon' />
+    <link lang="sass" rel="stylesheet" href="{{ 'assets/css/main.css' | absolute_url }}">
+    <link rel="icon" href="{{ '/assets/img/favicon.ico' | absolute_url }}" type="image/x-icon" />
     <title>{{ site.title }}</title>
 </head>

@@ -4,11 +4,13 @@ description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-baseurl: "/" 
-url: "/portfolio-template" 
+# Root directory for your portfolio. On GitHub Pages, this is the name of your repository.
+baseurl: "/portfolio-template"
+# Protocol + hostname for your portfolio. On GitHub Pages, this is https://yourusername.github.io
+url: "https://mlh-fellowship.github.io" 
 twitter_username: mlhacks
 github_username:  mlh-fellowship
-cover: "./assets/img/social-link.jpg" 
+social_image: "./assets/img/social-link.jpg" 
 
 sass:
   sass_dir: _sass
