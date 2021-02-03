@@ -2,7 +2,7 @@
 <div class="card-container">
     {% for item in site.data.projects %}
     {% if item.page-name %}
-    <a href="{{ site.url }}/projects/{{ item.page-name }}">
+    <a href="{{ '/projects/' | append: item.page-name | absolute_url }}">
     {% else %}
     <a>
     {% endif %}
