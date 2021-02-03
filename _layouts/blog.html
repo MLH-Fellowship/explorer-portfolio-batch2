@@ -17,11 +17,11 @@ layout: default
     </div>
 
 </div>
-
+{% include navItems.html%}
 
 <div class="container page">
 
      {{ content }}
-     <strong><p style="direction:rtl">Blog Written on {{ page.date | date_to_string }}</p></strong>
+     <strong><p style="direction:rtl"><i>Blog Written on {{ page.date | date_to_string }}</i></p></strong>
 
 </div>
