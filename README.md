@@ -101,8 +101,13 @@ You can customize the following components by changing their variable values in 
 
 You can choose the footer by changing the value of `- footer_file_name :` in `_data/footer.yml` as
 
-1. footer_flat.html
-2. footer_minimal.html 
+1. `footer_flat.html` for
+
+![footer_flat](/assets/img/footer_flat.png)
+
+2. `footer_minimal.html` for 
+
+![footer_minimal](/assets/img/footer_minimal.png)
 
 ## Development
 
