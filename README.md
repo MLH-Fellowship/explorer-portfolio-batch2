@@ -79,14 +79,6 @@ layout: page
     Example : `form_url: "https://formspree.io/f/mrgodpnk"`
 6. All the submissions will be visible on the `submissions` tab. :D
 
-## Development
-
-If you want to test it locally or add some new features, run the below commands. Make sure to have Ruby and Bundler installed.
-
-```
-bundle install
-bundle exec jekyll serve
-```
 ## Customizing Page Components
 
 You can customize the following components by changing their variable values in `_sass/variables.scss`:
@@ -104,3 +96,19 @@ You can customize the following components by changing their variable values in 
 12. `fontsize_h1` : Font size for h1 headings
 13. `fontsize_h2` : Font size for h2 headings
 14. `fontsize_h1_profile` : Font size for h1 headings in the profile section 
+
+## Choose Footer
+
+You can choose the footer by changing the value of `- footer_file_name :` in `_data/footer.yml` as
+
+1. footer_flat.html
+2. footer_minimal.html 
+
+## Development
+
+If you want to test it locally or add some new features, run the below commands. Make sure to have Ruby and Bundler installed.
+
+```
+bundle install
+bundle exec jekyll serve
+```
