@@ -1,0 +1,21 @@
+<h2>Skills</h2>
+<div class="skill-section">
+  {% for item in site.data.skills %}
+  <div class="skill">
+    <div class="skill-card">
+      <p class="title">{{ item.name }}</p>
+      {% for category in item.skills %}
+      <div class="card">
+        <div class="icon">          
+          <i class="{{category.icon}} colored" style="font-size: xxx-large;"></i>
+        </div>
+        <div class="info">
+          <p>{{ category.skill }}</p>
+          <p class="proficient">{{ category.profeciency }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  {% endfor %}
+</div>

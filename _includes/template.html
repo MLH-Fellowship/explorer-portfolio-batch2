@@ -2,7 +2,7 @@
 <div class="card-container">
     {% for item in include.file %}
     {% if include.title == "Education" or include.title == "Work Experience" %}
-    <div class="card">
+    <div class="card shadow">
       <div class="icon">
         <img src="./assets/img/education/{{ item.logo }}">
       </div>
@@ -12,7 +12,7 @@
         {% else %}
             <a>
         {% endif %}
-    <div class="card">
+    <div class="card shadow">
     {% endif %}
       <div class="info">
         <p class="title">{% if include.title == "Education" %}{{ item.course }}{% elsif include.title == "Work Experience" %}{{item.role}}{% else %}{{item.title}}{% endif %}</p>
