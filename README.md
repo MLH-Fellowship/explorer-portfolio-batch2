@@ -45,7 +45,7 @@ Achievement example.
   date: Jan 2021
 ```
 
-## Add project posts
+## Add project/blog posts
 
 1. Make a new `.md` file inside of `projects`.
 2. Add the header to your markdown file (see below) and change the title to the name of your blog post.
@@ -66,7 +66,7 @@ layout: page
 - title: Machine Learning Project
   event: MLH Fellowship Explorer Sprint 3 - Batch 1
   date: Fall 2020
-  page-name: sprint1
+  page-name: Sprint1
 ```
 ## Add Contact Us form
 
