@@ -52,7 +52,7 @@ h2 {
   @else {
     box-shadow: none !important;
   }
-  
+
 }
 
 .card {
@@ -141,16 +141,6 @@ a {
   background: $alt_card_background;
 }
 
-
-
-
-
-
-
-
-
-
-
 a:visited {
   color: rgb(102, 0, 153);
 }
@@ -176,5 +166,3 @@ a:link {
 .info:nth-child(n):hover {
   transform: scale(1.01);
 }
-
-
