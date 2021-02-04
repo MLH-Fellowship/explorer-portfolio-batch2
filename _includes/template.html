@@ -8,7 +8,7 @@
       </div>
     {% else %}
         {% if item.page-name %}
-            <a href="{{ site.url }}/projects/{{ item.page-name }}">
+            <a href="{{ site.url }}/projects/{{ item.page-name }}" class="link-card">
         {% else %}
             <a>
         {% endif %}
@@ -19,6 +19,9 @@
         <p class="location">{% if include.title == "Education" %}{{ item.institute }}{% elsif include.title == "Work Experience" %}{{item.company}}{% else %}{{item.event}}{% endif %}</p>
         <p class="dates">{{ item.dates }}</p>
       </div>
+      {% if item.page-name %}
+      <object type="image/svg+xml" data="./assets/img/launch.svg" class="launch-icon"></object>
+      {% endif %}
     </div>
     {% if include.title == "Projects" %}
         </a>
