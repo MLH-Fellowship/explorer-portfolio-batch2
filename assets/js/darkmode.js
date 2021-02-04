@@ -1,5 +1,8 @@
 let imode = localStorage.getItem("isDark");
 
+if(imode === null)
+  imode = String(window.matchMedia('(prefers-color-scheme: dark)').matches);
+
 let toogleStatus = document.getElementById('check-mode');
 let bodyElement = document.getElementsByTagName('body')[0];
 let navLogo = document.getElementsByClassName('nav-logo')[0];
