@@ -1,0 +1,45 @@
+<h2>{{include.title}}</h2>
+<div class="card-container">
+    {% for item in include.file %}
+        {% if item.inspiration %}
+            <button  type="button" data-toggle="modal" data-target="#projectModal">
+        {% else %}
+            <a>
+        {% endif %}
+    <div class="card">
+      <div class="info">
+        <p class="title">{{ item.title }}</p>
+        <p class="location">{{ item.event }}</p>
+        <p class="dates">{{ item.dates }}</p>
+      </div>
+    </div>
+        </a>
+        </button>
+
+        <div class="modal fade" id="projectModal" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="projectModal">{{ item.title }}</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body container page">
+                  <h2 id="inspiration">Inspiration</h2>
+                  <p>{{ item.inspiration }}</p>
+                  <h2 id="what-it-does">What it does</h2>
+                  <p>{{ item.functionality }}</p>
+                  <h2 id="how-we-built-it">How we built it</h2>
+                  <p>{{ item.process }}</p>
+                  <h2 id="challenge-we-ran-into">Challenge we ran into</h2>
+                  <p>{{ item.challenge }}</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    {% endfor %}
+</div>
