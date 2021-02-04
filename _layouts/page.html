@@ -1,20 +1,17 @@
 ---
 layout: default
 ---
-
-<div class="banner">
-    <div class="container">
-        <div class="logo">
-            <a href="{{ site.url }}">
-                <img src="{{ site.url }}/assets/img/logo.svg"/>
-            </a>
-        </div>
-        <div class="title">
-            {{ page.title }}
+<body>
+    {% include navbar.html %}
+    <div class="banner">
+        <div class="container">
+            <div class="title">
+                {{ page.title }}
+            </div>
         </div>
     </div>
-</div>
-
-<div class="container page">
-    {{ content }}
-</div>
+    
+    <div class="container page">
+        {{ content }}
+    </div>
+</body>

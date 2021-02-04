@@ -1,0 +1,23 @@
+email:
+  id: "your.name@yoursite.com"
+  href: "mailto:"
+  title: "Email"
+  fa-icon: "fa-envelope-square fa-2x"
+
+github:
+  id: "your-github-name"
+  href: "https://github.com/"
+  title: "GitHub"
+  fa-icon: "fa-github-square fa-2x"
+
+linkedin:
+  id: "your-linkedin-name"
+  href: "https://linkedin.com/"
+  title: "Linkedin"
+  fa-icon: "fa-linkedin-square fa-2x"
+
+twitter:
+  id: "your-twitter-name"
+  href: "https://www.twitter.com/"
+  title: "Twitter"
+  fa-icon: "fab fa-twitter fa-2x"

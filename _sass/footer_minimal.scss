@@ -1,0 +1,30 @@
+
+// variable for fonts
+$font_color:#686b6f;
+
+#social_icon {
+    color: $font_color;
+}
+// property for <hr>  for footer
+#break_line{
+//  background-color: $font_color;
+border: none;
+     width: 80%;
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+// The move up arrow in footer
+#arrow_up{
+    font-size: 2.5rem;
+    color: $font_color;
+    &:hover{
+        padding:0px 2px 0px 2px;
+        background-color: #bbbaba;
+        color: rgb(240, 240, 240);
+        transition: background-color .2s;
+        transition: padding .1s;
+    }
+}
