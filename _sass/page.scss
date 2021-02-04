@@ -119,3 +119,14 @@ hr {
         height: auto;
     }
 }
+
+.card .learn-more {
+    color: $learn_more;
+    font-size: 0.9rem;
+    border-bottom: 1px solid;
+    cursor: pointer;
+}
+
+.modal-body  i {
+    font-size: 1.5rem
+}
