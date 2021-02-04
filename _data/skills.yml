@@ -1,0 +1,47 @@
+# Get regular icons from fontawesome: https://fontawesome.com/
+# Get dev icons from devicon: https://devicon.dev/
+
+# Language Section
+- name: Languages
+  skills:    
+    - skill: Python
+      profeciency: Intermediate
+      icon: devicon-python-plain
+      
+    - skill: C++
+      profeciency: Beginner
+      icon: devicon-c-plain
+
+    - skill: Java
+      profeciency: Intermediate
+      icon: devicon-java-plain
+
+# frameworks section
+- name: Frameworks
+  skills:
+    - skill: Flutter
+      profeciency: Intermediate
+      icon: devicon-flutter-plain
+
+    - skill: Django
+      profeciency: Advanced
+      icon: devicon-django-plain
+      
+    - skill: Express.js
+      profeciency: Beginner
+      icon: devicon-express-original
+
+# interpersonal section
+- name: Soft Skills
+  skills:
+    - skill: Communication Skills
+      profeciency: Beginner
+      icon: fas fa-satellite-dish
+
+    - skill: Presentation Skills
+      profeciency: Intermediate
+      icon: fas fa-file-powerpoint
+
+    - skill: Team Player
+      profeciency: Advanced
+      icon: fas fa-users
