@@ -1,12 +1,12 @@
 <h2>Projects</h2>
-<div class="card-container">
+<div class="card-container ">
     {% for item in site.data.projects %}
     {% if item.page-name %}
     <a href="{{ site.url }}/projects/{{ item.page-name }}">
     {% else %}
     <a>
     {% endif %}
-      <div class="card">
+      <div class="card shadow">
         <div class="info">
           <p class="title">{{ item.title }}</p>
           <p class="location">{{ item.event }}</p>

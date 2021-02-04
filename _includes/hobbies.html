@@ -1,0 +1,44 @@
+<h2>Hobbies</h2>
+<!-- <div class="flip-card">
+    {% for item in site.data.hobbies %}
+    <div class="flip-card-inner">
+        <div class="flip-card-front">
+            <div class="info">
+                <p class="name">{{ item.name }}</p>
+                <p class="desc">{{ item.desc }}</p>
+            </div>
+        </div>
+        <div class="flip-card-back">
+            <div class="info">
+                <p class="name">{{ item.name }}</p>
+                <p class="desc">{{ item.desc }}</p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div> -->
+<div class="list">
+    <div class="row">
+        {% for item in site.data.hobbies %}
+        <div class="column">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="./assets/img/hobbies/{{ item.logo }}" ">
+
+                    </div>
+                    <div class="flip-card-back ">
+
+                        <div class="hobbies-text ">
+
+                            <p style="text-align: center; ">{{ item.name }}</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+  </div>
+</div>

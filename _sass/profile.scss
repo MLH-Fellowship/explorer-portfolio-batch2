@@ -1,4 +1,8 @@
+@import 'variables';
+
 .profile {
+
+    background-color: $herobackground;
     background-image: url(https://image.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg);
     background-size: cover;
     background-position: center;
@@ -9,11 +13,12 @@
     position: relative;
 
     h1 {
-        font-size: calc(1.5vw + 23px);
+        font-size: $fontsize_h1_profile;
         font-weight: 700;
-        color: white;
+        color: $title_color;
         z-index: 1;
         position: relative;
+
     }
     
     img {
