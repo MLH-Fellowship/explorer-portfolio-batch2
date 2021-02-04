@@ -44,6 +44,17 @@ h2 {
   text-align: center;
 }
 
+.shadow {
+  @if $box_shadow {
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(166, 173, 201, 0.2);
+  }
+  @else {
+    box-shadow: none !important;
+  }
+  
+}
+
 .card {
   display: flex;
   flex-direction: row;
@@ -115,6 +126,12 @@ a {
   }
 }
 
+
+@media only screen and (max-width: 768px) {
+  .card {
+    margin: 10px 30px;
+  }
+}
 .darkmode {
   background: $dark_background !important;
   color: $dark_font_color;

@@ -104,3 +104,4 @@ You can customize the following components by changing their variable values in 
 12. `fontsize_h1` : Font size for h1 headings
 13. `fontsize_h2` : Font size for h2 headings
 14. `fontsize_h1_profile` : Font size for h1 headings in the profile section 
+15. `box_shadow`  :  Option for shadow effect
