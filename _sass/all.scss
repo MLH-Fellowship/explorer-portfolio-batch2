@@ -5,6 +5,7 @@
 @import 'profile';
 @import 'page';
 @import 'variables';
+@import 'variables_dark';
 
 .card-container {
     display: grid;
@@ -73,30 +74,32 @@ h2 {
 }
 
 a {
-  color: black;
+
+    color: inherit;
 }
 
 .info {
-  p {
-    margin-top: 5px;
-    margin: 0px;
-    text-align: left;
-  }
+    p {
+        margin-top: 5px;
+        margin: 0px;
+        text-align: left;
+    }
 
-  .title {
-    font-size: 500;
-    font-weight: bold;
-  }
+    .title {
+        font-size: 500;
+        font-weight: bold;
+    }
 
-  .location {
-    font-size: medium;
-    font-weight: 400;
-  }
+    .location {
+        font-size: medium;
+        font-weight: 400;
+    }
 
-  .dates {
-    font-size: small;
-    color: #404040;
-  }
+    .dates {
+        font-size: small;
+        color: inherit;
+    }
+
 }
 
 .icon {
@@ -108,4 +111,13 @@ a {
   img {
     width: 100%;
   }
+}
+
+.darkmode {
+  background: $dark_background !important;
+  color: $dark_font_color;
+}
+
+.alt-background {
+  background: $alt_card_background;
 }
