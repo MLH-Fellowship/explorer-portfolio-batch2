@@ -10,6 +10,7 @@ baseurl: "/portfolio-template"
 url: "https://mlh-fellowship.github.io" 
 twitter_username: mlhacks
 github_username:  mlh-fellowship
+form_url: "https://formspree.io/f/xrgodpqo"
 social_image: "./assets/img/social-link.jpg" 
 
 sass:

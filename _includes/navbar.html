@@ -2,9 +2,20 @@
     <div class="nav-content">
         <a href="{{ '/' | relative_url }}">
             <div class="nav-logo">
-                <img src="./assets/img/logo.svg" />
-                <a class="nav-link" href="{{ '/cv/resume.pdf' | absolute_url }}">Resume</a>                
+                <img src="{{ site.url }}/assets/img/logo.svg" />
             </div>
-        </a>        
+            <div class="nav-links">
+                <a class="nav-link" href="{{ site.url }}/">Home</a>
+                <a class="nav-link" href="{{ site.url }}/blog">Blog</a>                
+                <a class="nav-link" href="{{ site.url }}/cv/resume.pdf">Resume</a>
+            </div>
+            <div class="nav-toogle">
+              <span class='nav-span'> Dark Mode </span>
+              <label class="switch">
+                <input type="checkbox" id="check-mode" onclick="darkmode()">
+                <span class="slider round"></span>
+              </label>
+            </div>
+        </a>
     </div>
 </header>
