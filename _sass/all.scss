@@ -36,6 +36,7 @@
 
 body {
   background-color: #f5f5f9;
+  margin-bottom: 50px;
 }
 h2 {
   margin-bottom: 20px;
@@ -126,6 +127,9 @@ a {
   }
 }
 
+.list {
+    margin-top: 70px;
+}
 
 @media only screen and (max-width: 768px) {
   .card {
