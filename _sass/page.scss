@@ -51,7 +51,7 @@ body {
 .page h2 {
     text-align: left !important;
     font-weight: 800 !important;
-    color: $text_color;
+    color: inherit;
     font-size: $fontsize_h2;
     margin-bottom: 0.5em;
 }
@@ -70,7 +70,7 @@ body {
 }
 
 .page p {
-    color: $text_color;
+    color: inherit;
     font-weight: 500;
 }
 
