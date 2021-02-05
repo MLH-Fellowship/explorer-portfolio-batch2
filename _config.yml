@@ -9,6 +9,7 @@ url: "/portfolio-template"
 twitter_username: mlhacks
 github_username: mlh-fellowship
 form_url: "https://formspree.io/f/xrgodpqo"
+google_analytics_measurement_id: # G-XXXXXXXXXX
 
 sass:
   sass_dir: _sass
