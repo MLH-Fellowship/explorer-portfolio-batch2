@@ -5,6 +5,7 @@ let bodyElement = document.getElementsByTagName('body')[0];
 let navLogo = document.getElementsByClassName('nav-logo')[0];
 let cards = document.getElementsByClassName('card');
 let container = document.getElementsByClassName('page');
+let footer = document.getElementsByClassName('footer');
 
 console.log(imode);
 if(imode == "true"){
@@ -24,6 +25,9 @@ function darkmode(){
     if(container[0]){
       container[0].className += " " + "darkmode";
     }
+    if(footer[0]){
+      footer[0].className += " " + "darkmode";
+    }
     localStorage.setItem("isDark", true);
   }else{
     bodyElement.classList.remove('darkmode');
@@ -35,6 +39,9 @@ function darkmode(){
     }
     if(container[0]){
       container[0].classList.remove("darkmode");
+    }
+    if(footer[0]){
+      footer[0].classList.remove("darkmode");
     }
     localStorage.setItem("isDark", false);
   }
