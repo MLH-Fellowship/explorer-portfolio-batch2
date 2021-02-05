@@ -79,6 +79,12 @@ layout: page
     Example : `form_url: "https://formspree.io/f/mrgodpnk"`
 6. All the submissions will be visible on the `submissions` tab. :D
 
+## Add Google Analytics
+
+1. Get your Measurement ID from your Analytics account. | https://support.google.com/analytics/answer/1008080
+2. Copy the end point and add it to the `google_analytics_measurement_id` in `_config.yml` file and then you are good to go! :)
+    Example : `google_analytics_measurement_id: G-XXXXXXXXXX`
+
 ## Development
 
 If you want to test it locally or add some new features, run the below commands. Make sure to have Ruby and Bundler installed.
