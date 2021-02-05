@@ -81,8 +81,8 @@ layout: page
 
 ## Add Google Analytics
 
-1. Get your Measurement ID from your Analytics account. | https://support.google.com/analytics/answer/1008080
-2. Copy the end point and add it to the `google_analytics_measurement_id` in `_config.yml` file and then you are good to go! :)
+1. Get your Measurement ID from your Analytics account. | https://help.format.com/en/articles/4655196-adding-google-analytics-using-measurement-id-recommended
+2. Copy the Measurement ID and add it to the `google_analytics_measurement_id` in `_config.yml` file and then you are good to go! :)
     Example : `google_analytics_measurement_id: G-XXXXXXXXXX`
 
 ## Customizing Page Components
