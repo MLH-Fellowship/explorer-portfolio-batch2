@@ -40,7 +40,7 @@
 
     <script src="https://jsxss.com/assets/xss.js"
         crossorigin="anonymous"></script>
-    <script defer src="{{ base.url | prepend: site.url }}/assets/js/darkmode.js"></script>
+    <script defer src="{{ '/assets/js/darkmode.js' | absolute_url }}"></script>
 
 
     <!-- Bootstrap CSS -->
@@ -49,8 +49,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
         integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
 
-    <link lang='sass' rel="stylesheet" href="{{ site.url }}/assets/css/main.css">
-    <link rel='icon' href='{{ site.url }}/assets/img/favicon.ico' type='image/x-icon' />
+    <link lang="sass" rel="stylesheet" href="{{ '/assets/css/main.css' | absolute_url }}">
+    <link rel="icon" href="{{ '/assets/img/favicon.ico' | absolute_url }}" type="image/x-icon" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.9.0/devicon.min.css">
     <script src="https://kit.fontawesome.com/8099453d60.js" crossorigin="anonymous"></script>
     <title>{{ site.title }}</title>
