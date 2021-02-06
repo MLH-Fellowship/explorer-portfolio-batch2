@@ -1,0 +1,15 @@
+navItems:
+- title: About
+  url: /
+
+- title: Experience
+  url: /sections/experience-page.html
+
+- title: Projects
+  url: /sections/project-page.html
+
+- title: Education
+  url: /sections/education-page.html
+
+- title: Blogs
+  url: /sections/blogs.html

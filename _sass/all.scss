@@ -4,11 +4,15 @@
 @import 'navbar';
 @import 'profile';
 @import 'page';
+<<<<<<< HEAD
 @import 'skills';
 @import 'footer_flat';
 @import 'footer_minimal';
 @import 'variables';
 @import 'variables_dark';
+=======
+@import'section';
+>>>>>>> b751a6abad03df3cb695ad8fc753e8053b06491c
 
 .card-container {
     display: grid;

@@ -1,0 +1,27 @@
+<div class="card-container">
+<!--- Custom Blogs kept in _posts Folder -->
+
+    {% for item in site.posts %}
+    <a href="{{ item.url }}">
+      <div class="card">
+        <div class="info">
+          <p class="title">{{ item.blogtitle }}</p>
+          <p class="date">{{ item.date | date_to_string }}</p>
+        </div>
+      </div>
+    </a>
+    {% endfor %}
+<!--- Blogs that are from blogs.yml file in _data folder -->
+
+    {% for item in site.data.blogs %}
+    <a href="{{ item.url }}">
+      <div class="card">
+        <div class="info">
+          <p class="title">{{ item.title }}</p>
+          <p class="date">{{ item.date | date_to_string }}</p>
+        </div>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+  

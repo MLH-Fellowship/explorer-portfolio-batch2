@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<div class="banner">
+    <div class="container">
+        <div class="logo">
+            <a href="{{ site.url }}">
+                <img src="{{ site.url }}/assets/img/logo.svg"/>
+            </a>
+        </div>
+        <div class="title">
+            {{ page.blogtitle }}
+
+        </div>
+
+    </div>
+
+</div>
+{% include navItems.html %}
+<div class="container page">
+
+     {{ content }}
+     <strong><p style="direction:rtl"><i>Blog Written on {{ page.date | date_to_string }}</i></p></strong>
+
+</div>
