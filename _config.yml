@@ -11,7 +11,8 @@ url: "https://mlh-fellowship.github.io"
 twitter_username: mlhacks
 github_username:  mlh-fellowship
 form_url: "https://formspree.io/f/xrgodpqo"
-social_image: "./assets/img/social-link.jpg" 
+social_image: "./assets/img/social-link.jpg"
+google_analytics_measurement_id: # G-XXXXXXXXXX
 
 sass:
   sass_dir: _sass
