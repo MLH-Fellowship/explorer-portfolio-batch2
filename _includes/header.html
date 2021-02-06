@@ -1,12 +1,49 @@
 <head>
+    {% if site.google_analytics_measurement_id %}
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics_measurement_id }}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', '{{site.google_analytics_measurement_id}}');
+    </script>
+    {% endif %}
+    
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta property="og:title" content="Personal Portfolio">
-    <meta property="og:description"
-        content="My Personal Portfolio">
-    <meta property="og:image" content="./assets/img/social-link.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">  
+    
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="{{ site.title }}">
+    <meta name="description" content="{{ site.description }}">
+
+    {% capture social_image %}{{site.social_image | absolute_url }}{% endcapture %}
+    {% capture social_image_alt %}{{ site.social_image_alt | default: site.title }}{% endcapture %}
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
     <meta property="og:url" content="{{ page.url }}">
+    <meta property="og:title" content="{{ site.title }}">
+    <meta property="og:description" content="{{ site.description }}">
+    {% if social_image and social_image != blank %}
+    <meta property="og:image" content="{{ social_image }}">
+    <meta property="og:image:alt" content="{{ social_image_alt }}">
+    {% endif %}
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="{{ page.url}}">
+    <meta property="twitter:title" content="{{ site.title }}">
+    <meta property="twitter:description" content="{{ site.description }}">
+    {% if social_image and social_image != blank %}
+    <meta property="twitter:image" content="{{ social_image }}">
+    <meta property="twitter:image:alt" content="{{ site.social_image_alt }}">
+    {% endif %}
+    {% if site.twitter_username and site.twitter_username != blank %}
+    <meta name="twitter:creator" content="@{{ site.twitter_username }}">
+    <meta name="twitter:site" content="@{{ site.twitter_username }}">
+    {% endif %}
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -17,8 +54,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
+
     <script src="https://jsxss.com/assets/xss.js"
         crossorigin="anonymous"></script>
+    <script defer src="{{ '/assets/js/darkmode.js' | absolute_url }}"></script>
+
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -26,7 +66,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
         integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
 
-    <link lang='sass' rel="stylesheet" href="{{ site.url }}/assets/css/main.css">
-    <link rel='icon' href='{{ site.url }}/assets/img/favicon.ico' type='image/x-icon' />
+    <link lang="sass" rel="stylesheet" href="{{ '/assets/css/main.css' | absolute_url }}">
+    <link rel="icon" href="{{ '/assets/img/favicon.ico' | absolute_url }}" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.9.0/devicon.min.css">
+    <script src="https://kit.fontawesome.com/8099453d60.js" crossorigin="anonymous"></script>
     <title>{{ site.title }}</title>
+
+    <!-- fonts for footer -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 </head>

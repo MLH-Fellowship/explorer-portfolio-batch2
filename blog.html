@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<body>
+  {% include navbar.html %}
+  <h2>BLOG POSTS</h2>
+  <div class="card-container">
+    {% for item in site.data.projects %}
+    {% if item.page-name %}
+    <a href="{{ '/projects/' | append: item.page-name | absolute_url }}" class="link-card">
+      <div class="card">
+        <div class="info">
+          <p class="title">{{ item.page-name }}</p>
+          <p class="dates">{{ item.date }}</p>
+        </div>
+        <object type="image/svg+xml" data="./assets/img/launch.svg" class="launch-icon"></object>
+      </div>
+    </a>
+    {% endif %}
+    {% endfor %}
+</body>

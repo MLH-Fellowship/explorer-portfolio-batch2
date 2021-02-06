@@ -1,0 +1,38 @@
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: #1C539F;
+    position: relative;
+    padding: 6px 12px ;
+    margin-top: 30px;
+    font-family: "Open Sans", serif;
+    font-weight: 500 !important;
+    color: white;
+    img{
+        max-width:100px;
+    }
+}
+.footer .social{  
+    color: white;
+    a{
+        margin-left: 10px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer{
+        font-size: 8px;
+        img{
+            max-width:50px;
+        }
+    }
+    .footer .social{  
+        a{
+            margin-left:3px;
+            font-size: 8px;
+        }
+    }
+}

@@ -1,0 +1,58 @@
+.skill-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  font-family: "Open Sans", sans-serif;
+  margin: 20px 0px;
+}
+
+@media only screen and (max-width: 1500px) {
+  .skill-section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .skill-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .skill-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+.skill {
+  display: inline;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  height: max-content;
+
+  .skill-card {
+    width: 100%;
+    padding: 20px;
+    display: inline-block;
+    font-size: larger;
+    font-weight: bolder;
+    margin: 30px;
+    background-color: white;
+    border: 1px solid gainsboro;
+    border-radius: .375rem;
+  }
+
+  .card {
+    margin: 20px 10px;
+    padding: 1em;
+  }
+
+  .info {
+    font-size: medium;
+    font-weight: 500;
+  }
+
+  .proficient {
+    font-size: small;
+  }
+}
