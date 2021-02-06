@@ -20,25 +20,30 @@
     <meta name="description" content="{{ site.description }}">
 
     {% capture social_image %}{{site.social_image | absolute_url }}{% endcapture %}
+    {% capture social_image_alt %}{{ site.social_image_alt | default: site.title }}{% endcapture %}
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="{{ page.url}}">
+    <meta property="og:url" content="{{ page.url }}">
     <meta property="og:title" content="{{ site.title }}">
     <meta property="og:description" content="{{ site.description }}">
-    <meta property="og:image:secure_url" content="{{ social_image }}">
-    <meta property="og:image:secure" content="{{ social_image }}">
-    <meta property="og:image:url" content="{{ social_image }}">
+    {% if social_image and social_image != blank %}
     <meta property="og:image" content="{{ social_image }}">
+    <meta property="og:image:alt" content="{{ social_image_alt }}">
+    {% endif %}
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="{{ page.url}}">
     <meta property="twitter:title" content="{{ site.title }}">
     <meta property="twitter:description" content="{{ site.description }}">
+    {% if social_image and social_image != blank %}
     <meta property="twitter:image" content="{{ social_image }}">
-    <meta name='twitter:site' content='@{{ site.twitter_username }}' />
-    <meta name='twitter:creator' content='@{{ site.twitter_username }}' />
-
+    <meta property="twitter:image:alt" content="{{ site.social_image_alt }}">
+    {% endif %}
+    {% if site.twitter_username and site.twitter_username != blank %}
+    <meta name="twitter:creator" content="@{{ site.twitter_username }}">
+    <meta name="twitter:site" content="@{{ site.twitter_username }}">
+    {% endif %}
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

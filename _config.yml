@@ -12,6 +12,7 @@ twitter_username: mlhacks
 github_username: mlh-fellowship
 form_url: "https://formspree.io/f/xrgodpqo"
 social_image: "./assets/img/social-link.jpg"
+social_image_alt: # Alt text for the link preview image
 google_analytics_measurement_id: # G-XXXXXXXXXX
 
 sass:
