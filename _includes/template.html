@@ -8,7 +8,7 @@
       </div>
     {% else %}
         {% if item.page-name %}
-            <a href="{{ site.url }}/projects/{{ item.page-name }}" class="link-card">
+            <a href="{{ '/projects/' | append: item.page-name | absolute_url }}" class="link-card">
         {% else %}
             <a>
         {% endif %}
